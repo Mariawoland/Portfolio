@@ -19,12 +19,10 @@ export default function Home() {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    // Simulate asynchronous operation (e.g., fetching data) before considering the page as fully mounted
     const simulateAsyncOperation = () => {
       setTimeout(() => {
         setPageMounted(true);
-      }, 1000); // Adjust the timeout as needed
+      }, 1000);
     };
 
     simulateAsyncOperation();
@@ -37,12 +35,10 @@ export default function Home() {
   return (
     <>
       {!isPageMounted ? (
-        // Render a loading indicator while the page is mounting
         <div className="w-full h-screen flex items-center justify-center bg-black">
           <img src="/smallLogo.svg" className="w-20 pulsing" alt="small Logo" />
         </div>
       ) : (
-        // Render the page content once it is fully mounted
         <>
           <Header />
           <Hero />
