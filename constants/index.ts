@@ -177,7 +177,7 @@ export const PROJECTS = [
 
         image: "/projects/4.png",
 
-        link: "https://wind-pcnxs3txs-mariawoland.vercel.app/",
+        link: "https://wind-alpha.vercel.app/",
         gitlink: "https://github.com/Mariawoland/Wind"
     }
 ];
