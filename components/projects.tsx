@@ -22,7 +22,10 @@ const Projects = () => {
                                 <div className='flex lg:flex-row flex-col w-full gap-8'>
 
                                     <div className='lg:w-1/2 w-full'>
-                                        <img src={item.image} className='w-full h-full rounded-2xl object-fill' />
+                                        <a href={item.link} target='_blank' className='w-full h-full block'>
+                                            <img src={item.image} className='w-full h-full rounded-2xl object-fill' />
+                                        </a>
+
                                     </div>
 
                                     <div className='lg:w-1/2 w-full'>
@@ -42,12 +45,9 @@ const Projects = () => {
 
                                 </div>
 
-                                <div className='bg-halfDark p-3 rounded-2xl absolute right-0 top-0 flex gap-3 items-center'>
+                                <div className='bg-halfDark p-3 rounded-2xl absolute right-0 top-0 flex gap-3 items-center opacity-70 hover:opacity-100 transition-all duration-300'>
                                     <a href={item.gitlink} target="_blank">
                                         <img src='/projects/img7.png' width={22} height={22} alt='Links' />
-                                    </a>
-                                    <a href={item.link} target="_blank">
-                                        <img src='/projects/img9.png' width={22} height={22} alt='Links' />
                                     </a>
                                 </div>
 

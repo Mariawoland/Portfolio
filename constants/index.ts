@@ -92,6 +92,22 @@ export const PROJECTS = [
         gitlink: "https://github.com/Mariawoland/Parzival"
     },
     {
+        name: "Solidify",
+        work: "Frontend Development",
+        description:
+            'Simple Blog website, that allows users to registrate, log in, add, delete and edit posts. Website uses shared API. I used AI for deoration.',
+        icons: [
+            "/projects/img1.png",
+            "/projects/img5.png",
+            "/projects/img6.png"
+        ],
+
+        image: "/projects/6.png",
+
+        link: "https://solidify-psi.vercel.app/",
+        gitlink: "https://github.com/Mariawoland/Solidify"
+    },
+    {
         name: "Tasks",
         work: "Frontend Development",
         description:
